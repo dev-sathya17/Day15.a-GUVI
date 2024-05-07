@@ -1,0 +1,92 @@
+html,
+body,
+div,
+table,
+thead,
+tbody,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.container {
+  max-width: 100%;
+  padding: 20px;
+}
+
+.table-responsive > table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+thead th {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+tbody td {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+#title,
+#description {
+  text-align: center;
+}
+
+#buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#buttons > button {
+  all: unset;
+  border: 1px solid #3679ba;
+  padding: 15px;
+  background-color: white;
+  color: #3679ba;
+  cursor: pointer;
+  font-size: 17px;
+  /* height: 15px; */
+}
+
+#buttons > .active {
+  background-color: #3679ba;
+  color: white;
+}
+
+#buttons > button[disabled="true"] {
+  background-color: #ccc;
+  color: black;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}

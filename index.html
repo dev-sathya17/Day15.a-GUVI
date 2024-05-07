@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Pagination Task</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">DOM Pagination Task</h1>
+      <p id="description">
+        This DOM pagination task uses a JSON data which has 100 data values. the
+        footer buttons for the page are dynamic and depend on the length of the
+        data. The table is populated depending on the page that is pressed. The
+        Next and Previous buttons disable based on the page number currently on.
+        The page is completely responsive.
+      </p>
+      <div class="table-responsive">
+        <table class="table table-bordered" id="table">
+          <thead>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>E-MAIL</th>
+          </thead>
+          <tbody id="body"></tbody>
+        </table>
+      </div>
+      <div id="buttons" class="d-flex justify-content-center"></div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  </body>
+</html>
